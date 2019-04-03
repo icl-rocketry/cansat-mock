@@ -20,18 +20,19 @@ void setup()
 
 void loop()
 {
-  if(battPercent < 0 || altitude < 0) return;
+  if (battPercent < 0 || altitude < 0)
+    return;
   nowtime = millis();
-  accelX = random(0, 10)/10.0;
-  accelY = random(0, 10)/10.0;
-  accelZ = random(0, 10)/10.0;
+  accelX = random(0, 10) / 10.0;
+  accelY = random(0, 10) / 10.0;
+  accelZ = random(0, 10) / 10.0;
   velocity += sqrt(pow(accelX, 2) + pow(accelY, 2) + pow(accelZ, 2));
   pressure += random(-3, 4);
-  altitude += random(-5, 0)/10.0;
-  battPercent += random(-5, 0)/100.0;
+  altitude += random(-5, 0) / 10.0;
+  battPercent += random(-5, 0) / 100.0;
 
-    Serial.println(
+  Serial.println(
       trObj.create(
-        ++packetCount, nowtime, pressure, temperature, altitude, velocity,
-        battPercent, softState, accelX, accelY, accelZ));
+          ++packetCount, nowtime, pressure, temperature, altitude, velocity,
+          battPercent, softState, accelX, accelY, accelZ));
 }
