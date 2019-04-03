@@ -1,0 +1,6 @@
+{
+  "terminal.integrated.env.osx": {
+    "PATH": "/Users/batnu/.platformio/penv/bin:/Users/batnu/.platformio/penv:/usr/local/opt/sqlite/bin:/Applications/MATLAB_R2018b.app/bin:/Users/batnu/.pyenv/shims:/Users/batnu/.nvm:/usr/local/opt/qt@5.5/bin:/Users/batnu/google-cloud-sdk/bin:/Users/batnu/.pyenv/versions/3.5.2/bin:/usr/local/Cellar/pyenv/1.0.0/libexec:/Users/batnu/.rbenv/shims:/Users/batnu/.config/fnm/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/usr/local/go/bin:/usr/local/MacGPG2/bin:/Library/Frameworks/Mono.framework/Versions/Current/Commands:/Library/TeX/texbin",
+    "PLATFORMIO_CALLER": "vscode"
+  }
+}
