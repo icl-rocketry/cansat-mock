@@ -17,7 +17,8 @@ public:
       unsigned int packetCount, unsigned int nowTime,
       float pressure, float temperature, float altitude, float velocity,
       float battPercent, uint8_t softState,
-      float accelX, float accelY, float accelZ);
+      float accelX, float accelY, float accelZ, 
+      float orientX, float orientY, float orientZ);
 };
 
 #endif

@@ -18,8 +18,9 @@ String transportObject::create(
     float pressure, float temperature,
     float altitude, float velocity,
     float battPercent, uint8_t softState,
-    float accelX, float accelY, float accelZ)
+    float accelX, float accelY, float accelZ,
+    float orientX, float orientY, float orientZ)
 {
   // Delimiter is ":", delimiter between lines is "&"
-  return String(packetCount) + ":" + String(nowTime) + ":" + String(pressure, 1) + ":" + String(temperature, 1) + ":" + String(altitude, 1) + ":" + String(velocity, 1) + ":" + String(battPercent, 0) + ":" + String(softState) + ":" + String(accelX) + ":" + String(accelY) + ":" + String(accelZ)+":";
+  return String(packetCount) + ":" + String(nowTime) + ":" + String(pressure, 1) + ":" + String(temperature, 1) + ":" + String(altitude, 1) + ":" + String(velocity, 1) + ":" + String(battPercent, 0) + ":" + String(softState) + ":" + String(accelX) + ":" + String(accelY) + ":" + String(accelZ)+":"+String(orientX)+":"+String(orientY)+":"+String(orientZ)+":";
 }
