@@ -21,5 +21,5 @@ String transportObject::create(
     float accelX, float accelY, float accelZ)
 {
   // Delimiter is ":", delimiter between lines is "&"
-  return String(packetCount) + ":" + String(nowTime) + ":" + String(pressure, 1) + ":" + String(temperature, 1) + ":" + String(altitude, 1) + ":" + String(velocity, 1) + ":" + String(battPercent, 0) + ":" + String(softState) + ":" + String(accelX) + ":" + String(accelY) + ":" + String(accelZ);
+  return String(packetCount) + ":" + String(nowTime) + ":" + String(pressure, 1) + ":" + String(temperature, 1) + ":" + String(altitude, 1) + ":" + String(velocity, 1) + ":" + String(battPercent, 0) + ":" + String(softState) + ":" + String(accelX) + ":" + String(accelY) + ":" + String(accelZ)+":";
 }
